@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerElementComponent implements OnInit {
 
+  // Il decorator input permette al component padre di andare a modificare il component figlio e i suoi elementi
+  @Input() element: {type: string, name: string, content: string};
+
   constructor() { }
 
   ngOnInit(): void {
