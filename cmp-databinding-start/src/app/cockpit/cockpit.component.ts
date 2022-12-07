@@ -12,7 +12,7 @@ export class CockpitComponent implements OnInit {
     Il nome dell'attribute viene utilizzato nell'event binding.
   */
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
-  @Output() bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  @Output('bpCreated') bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 
   newServerName = '';
   newServerContent = '';
